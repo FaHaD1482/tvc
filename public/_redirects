@@ -1,0 +1,7 @@
+/apparel /apparel.html 200
+/vegetables /vegetables.html 200
+/warehouse /warehouse.html 200
+/apparel.html /apparel 301!
+/vegetables.html /vegetables 301!
+/warehouse.html /warehouse 301!
+/index.html / 301!

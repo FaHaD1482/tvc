@@ -1,0 +1,30 @@
+# Clean URLs for Apache
+# /warehouse -> warehouse.html, and .html URLs 301-redirect to clean ones.
+#
+# nginx equivalent:
+#   location / {
+#     try_files $uri $uri.html $uri/ =404;
+#   }
+#   rewrite ^/([^.]+)\.html$ /$1 permanent;
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Serve /page from page.html when the html file exists
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME}.html -f
+  RewriteRule ^(.*?)/?$ $1.html [L]
+
+  # Redirect /page.html -> /page (SEO: one canonical URL)
+  RewriteCond %{THE_REQUEST} \s/([^\s?]+)\.html[\s?] [NC]
+  RewriteRule ^ /%1 [R=301,L]
+</IfModule>
+
+# Security headers
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+  Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'"
+</IfModule>

@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vegetables Line - Fresh Produce Wholesale | TVC Fashion House Sdn. Bhd.</title>
+  <meta name="description" content="TVC Fashion House sources and distributes fresh seasonal vegetables for Malaysian wholesale: leafy greens, fruiting vegetables, roots, cruciferous and alliums, moved through the same import-warehouse-wholesale chain." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Vegetables Line - Fresh Produce Wholesale | TVC Fashion House" />
+  <meta property="og:description" content="Fresh seasonal vegetables for Malaysian wholesale: leafy greens, fruiting vegetables, roots, cruciferous and alliums, supplied weekly." />
+  <meta property="og:image" content="assets/img/web/veg-harvest.jpg" />
+  <meta name="theme-color" content="#F6F2E9" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/favicon.png" />
+
+  <script>document.documentElement.classList.replace('no-js', 'js');</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400..800;1,400..700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            sand: '#F6F2E9',
+            ink: '#211E17',
+            night: '#211E17',
+            soft: '#6E6A5E',
+            thread: '#AE4A2A',
+            olive: '#66753B',
+            denim: '#3F5F8A',
+            brass: '#AC8446',
+          },
+          fontFamily: {
+            display: ['"Plus Jakarta Sans"', 'Inter', 'ui-sans-serif', 'sans-serif'],
+            sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+          },
+          maxWidth: {
+            shell: '76rem',
+          },
+          boxShadow: {
+            card: '0 10px 28px -14px rgba(33, 30, 23, 0.10)',
+            cardHover: '0 18px 38px -16px rgba(33, 30, 23, 0.15)',
+            shell: '0 10px 30px -14px rgba(33, 30, 23, 0.12)',
+          },
+        },
+      },
+    };
+  </script>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body id="top" class="bg-white font-sans text-ink antialiased">
+
+  <!-- SVG icon sprite -->
+  <svg xmlns="http://www.w3.org/2000/svg" class="hidden" aria-hidden="true">
+    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 21s-6.5-5.4-6.5-10a6.5 6.5 0 1 1 13 0c0 4.6-6.5 10-6.5 10z"/><circle cx="12" cy="10.6" r="2.2"/>
+    </symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M5 19C5 9.5 12.5 4.5 20 4.5c0 7.5-5 14.5-15 14.5z"/><path d="M5 19c3-6 7.5-9.5 11.5-11.5"/>
+    </symbol>
+    <symbol id="i-box" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3.5 8 12 4l8.5 4v8L12 20l-8.5-4V8z"/><path d="M3.5 8 12 12l8.5-4"/><path d="M12 12v8"/>
+    </symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M2.5 6.5h11.5V16H2.5z"/><path d="M14 9.5h4l3 3.5v3h-7v-6.5z"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/>
+    </symbol>
+    <symbol id="i-store" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4 9.5 5.5 4.5h13L20 9.5"/><path d="M4 9.5h16"/><path d="M5.5 9.5v10h13v-10"/><path d="M10 19.5v-5h4v5"/>
+    </symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 3 19 5.5V11c0 4.6-3 7.6-7 9.2-4-1.6-7-4.6-7-9.2V5.5L12 3z"/><path d="m9 11.5 2 2 4-4.5"/>
+    </symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4 12h15"/><path d="m13 6 6 6-6 6"/>
+    </symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M5 4h4l1.5 4.5-2 1.5a12.5 12.5 0 0 0 5.5 5.5l1.5-2L20 15v4a1.5 1.5 0 0 1-1.7 1.5C10.5 19.6 4.4 13.5 3.5 5.7A1.5 1.5 0 0 1 5 4z"/>
+    </symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3" y="5.5" width="18" height="13" rx="1"/><path d="m3 7.5 9 6 9-6"/>
+    </symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+      <path d="M4 7h16M4 12h16M4 17h16"/>
+    </symbol>
+    <symbol id="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+      <path d="m6 6 12 12M18 6 6 18"/>
+    </symbol>
+    <symbol id="i-shirt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M9 3.5a3 3 0 0 0 6 0l4.2 2 1.8 4-2.8 1.7V20.5H5.8V11.2L3 9.5l1.8-4L9 3.5z"/><path d="M9 3.5c0 1.4 6 1.4 6 0"/>
+    </symbol>
+    <symbol id="i-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="m6 9 6 6 6-6"/>
+    </symbol>
+    <symbol id="i-sprout" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 21v-8"/><path d="M12 13c0-3.5-2.5-6-6-6 0 3.5 2.5 6 6 6z"/><path d="M12 10c0-3 2-5 5.5-5 0 3-2 5-5.5 5z"/><path d="M8 21h8"/>
+    </symbol>
+  </svg>
+
+  <a href="#produce-top" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[70] focus:rounded-full focus:bg-ink focus:px-5 focus:py-2.5 focus:text-xs focus:font-semibold focus:uppercase focus:tracking-widest focus:text-white">
+    Skip to content
+  </a>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="fixed inset-x-0 top-0 z-50 px-4 sm:px-6">
+    <div id="nav-shell" class="mx-auto mt-4 flex h-[64px] max-w-shell items-center justify-between rounded-3xl border border-ink/[0.06] bg-white/85 pl-5 pr-3 backdrop-blur-xl transition-all duration-300 sm:pl-6 sm:pr-4">
+      <a href="./" class="flex items-center gap-1" aria-label="TVC Fashion House - back to home">
+        <img src="assets/img/logo.png" alt="TVC Fashion House logo" class="h-10 w-10 object-contain" />
+        <span class="leading-tight">
+          <span class="block font-display text-[15px] font-bold tracking-tight text-ink">TVC Fashion House</span>
+        </span>
+      </a>
+
+      <nav class="hidden items-center gap-7 lg:flex" aria-label="Primary">
+        <a href="./" class="nav-link text-[13px] font-medium text-ink/60 transition-colors hover:text-ink">Company</a>
+        <div class="relative" data-dropdown>
+          <button type="button" data-dropdown-btn aria-expanded="false" aria-haspopup="true" class="flex items-center gap-1.5 text-[13px] font-semibold text-ink">
+            Products
+            <svg class="h-3.5 w-3.5 transition-transform duration-200" data-dropdown-icon><use href="#i-chev"/></svg>
+          </button>
+          <div data-dropdown-menu role="menu" class="invisible absolute left-1/2 top-full z-50 mt-4 w-72 -translate-x-1/2 translate-y-2 opacity-0 transition-all duration-200">
+            <div class="overflow-hidden rounded-xl border border-ink/[0.08] bg-white p-2 shadow-shell">
+              <a href="apparel" role="menuitem" class="flex items-start gap-3 rounded-lg p-3 transition-colors hover:bg-sand">
+                <span class="grid h-10 w-10 shrink-0 place-items-center rounded-lg bg-thread/10 text-thread"><svg class="h-5 w-5"><use href="#i-shirt"/></svg></span>
+                <span>
+                  <span class="block text-sm font-semibold text-ink">Apparel line</span>
+                  <span class="mt-0.5 block text-xs leading-snug text-soft">Woven bottoms for men, women and kids</span>
+                </span>
+              </a>
+              <a href="vegetables" role="menuitem" aria-current="page" class="flex items-start gap-3 rounded-lg bg-sand p-3">
+                <span class="grid h-10 w-10 shrink-0 place-items-center rounded-lg bg-olive/10 text-olive"><svg class="h-5 w-5"><use href="#i-leaf"/></svg></span>
+                <span>
+                  <span class="block text-sm font-semibold text-ink">Vegetables line</span>
+                  <span class="mt-0.5 block text-xs leading-snug text-soft">Fresh seasonal produce, wholesale supply</span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="warehouse" class="nav-link text-[13px] font-medium text-ink/60 transition-colors hover:text-ink">Warehouse</a>
+        <a href="./#operations" class="nav-link text-[13px] font-medium text-ink/60 transition-colors hover:text-ink">Operations</a>
+        <a href="./#people" class="nav-link text-[13px] font-medium text-ink/60 transition-colors hover:text-ink">People</a>
+        <a href="./#locations" class="nav-link text-[13px] font-medium text-ink/60 transition-colors hover:text-ink">Locations</a>
+        <a href="./#standards" class="nav-link text-[13px] font-medium text-ink/60 transition-colors hover:text-ink">Standards</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <a href="#contact" class="hidden items-center gap-2 rounded-full bg-ink px-5 py-2.5 text-[13px] font-semibold text-white transition-all hover:bg-thread hover:shadow-lg lg:inline-flex">
+          Contact us
+          <svg class="h-3.5 w-3.5"><use href="#i-arrow"/></svg>
+        </a>
+        <button id="menu-toggle" class="grid h-11 w-11 place-items-center rounded-full border border-ink/10 text-ink lg:hidden" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="h-5 w-5"><use href="#i-menu"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- mobile slide-in menu -->
+  <div id="mobile-menu" class="fixed inset-0 z-[60] translate-x-full overflow-y-auto bg-white transition-transform duration-500 ease-[cubic-bezier(0.22,0.61,0.36,1)] lg:hidden" role="dialog" aria-modal="true" aria-label="Menu">
+    <div class="flex h-[72px] items-center justify-between px-5 sm:px-8">
+      <img src="assets/img/logo.png" alt="TVC Fashion House logo" class="h-10 w-10 object-contain" />
+      <button id="menu-close" class="grid h-11 w-11 place-items-center rounded-full border border-ink/10 text-ink" aria-label="Close menu">
+        <svg class="h-5 w-5"><use href="#i-x"/></svg>
+      </button>
+    </div>
+    <nav class="flex flex-col px-5 pt-4 sm:px-8" aria-label="Mobile">
+      <a href="./" class="group flex items-baseline gap-4 border-b border-ink/[0.07] py-3.5"><span class="text-[11px] font-semibold text-thread">01</span><span class="font-display text-[24px] font-bold tracking-tight text-ink transition-transform group-hover:translate-x-1">Company</span></a>
+      <a href="./#operations" class="group flex items-baseline gap-4 border-b border-ink/[0.07] py-3.5"><span class="text-[11px] font-semibold text-thread">02</span><span class="font-display text-[24px] font-bold tracking-tight text-ink transition-transform group-hover:translate-x-1">Operations</span></a>
+      <a href="./#people" class="group flex items-baseline gap-4 border-b border-ink/[0.07] py-3.5"><span class="text-[11px] font-semibold text-thread">03</span><span class="font-display text-[24px] font-bold tracking-tight text-ink transition-transform group-hover:translate-x-1">People</span></a>
+      <a href="./#locations" class="group flex items-baseline gap-4 border-b border-ink/[0.07] py-3.5"><span class="text-[11px] font-semibold text-thread">04</span><span class="font-display text-[24px] font-bold tracking-tight text-ink transition-transform group-hover:translate-x-1">Locations</span></a>
+      <a href="./#standards" class="group flex items-baseline gap-4 border-b border-ink/[0.07] py-3.5"><span class="text-[11px] font-semibold text-thread">05</span><span class="font-display text-[24px] font-bold tracking-tight text-ink transition-transform group-hover:translate-x-1">Standards</span></a>
+      <a href="apparel" class="group flex items-baseline gap-4 border-b border-ink/[0.07] py-3.5"><span class="text-[11px] font-semibold text-thread">06</span><span class="font-display text-[24px] font-bold tracking-tight text-ink transition-transform group-hover:translate-x-1">Apparel</span></a>
+      <a href="vegetables" class="group flex items-baseline gap-4 border-b border-ink/[0.07] py-3.5"><span class="text-[11px] font-semibold text-thread">07</span><span class="font-display text-[24px] font-bold tracking-tight text-ink transition-transform group-hover:translate-x-1">Vegetables</span></a>
+      <a href="warehouse" class="group flex items-baseline gap-4 border-b border-ink/[0.07] py-3.5"><span class="text-[11px] font-semibold text-thread">08</span><span class="font-display text-[24px] font-bold tracking-tight text-ink transition-transform group-hover:translate-x-1">Warehouse</span></a>
+      <a href="#contact" class="group flex items-baseline gap-4 border-b border-ink/[0.07] py-3.5"><span class="text-[11px] font-semibold text-thread">09</span><span class="font-display text-[24px] font-bold tracking-tight text-ink transition-transform group-hover:translate-x-1">Contact</span></a>
+    </nav>
+    <div class="px-5 pt-8 sm:px-8">
+      <p class="text-[10px] font-semibold uppercase tracking-[0.2em] text-soft">Reg. No. 202001003068 (1359387-P)</p>
+      <a href="tel:0391346145" class="mt-2 inline-block font-display text-lg font-bold text-ink">03-9134 6145</a>
+    </div>
+  </div>
+
+  <main id="produce-top">
+
+    <!-- ============ HERO - organic blocks ============ -->
+    <section class="bg-white pb-16 md:pb-24">
+      <div class="mx-auto max-w-shell px-5 pt-32 sm:px-8 md:pt-40">
+        <div class="grid gap-14 lg:grid-cols-[1.05fr_0.95fr] lg:gap-10">
+          <div>
+            <p data-reveal class="flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-olive">
+              <span class="h-1.5 w-1.5 rounded-full bg-olive"></span>
+              Products &middot; 02 &middot; Fresh Produce
+            </p>
+            <h1 data-reveal style="--rd:100ms" class="mt-6 font-display text-4xl font-extrabold leading-[1.06] tracking-tight text-ink sm:text-5xl xl:text-[3.8rem]">
+              Fresh produce, handled like <span class="italic text-olive">cargo</span>.
+            </h1>
+            <p data-reveal style="--rd:200ms" class="mt-7 max-w-lg text-base leading-relaxed text-soft md:text-lg">
+              Seasonal vegetables sourced from growers and moved through the same disciplined chain
+              as our apparel: received at Kajang, rotated fast, and sold wholesale from Port
+              Dickson.
+            </p>
+            <div data-reveal style="--rd:280ms" class="mt-9 flex flex-wrap gap-3">
+              <a href="#range" class="group inline-flex items-center gap-2 rounded-full bg-ink px-6 py-3.5 text-[13px] font-semibold text-white transition-all hover:bg-olive hover:shadow-xl">
+                See the range
+                <svg class="h-4 w-4 transition-transform group-hover:translate-x-1"><use href="#i-arrow"/></svg>
+              </a>
+              <a href="#contact" class="inline-flex items-center gap-2 rounded-full border border-ink/15 bg-white px-6 py-3.5 text-[13px] font-semibold text-ink transition-all hover:border-ink/40 hover:shadow-md">
+                Ask about supply
+              </a>
+            </div>
+          </div>
+
+          <!-- organic block composition -->
+          <div class="relative pb-10 lg:pb-0">
+            <div class="absolute right-0 top-8 hidden h-[72%] w-[72%] rotate-3 rounded-[2.5rem] bg-olive/15 sm:block" aria-hidden="true"></div>
+            <div class="absolute bottom-16 right-6 hidden h-24 w-24 rounded-full bg-thread/10 sm:block" aria-hidden="true"></div>
+
+            <svg class="absolute -left-6 top-0 h-16 w-16 text-ink/15" viewBox="0 0 76 56" fill="currentColor" aria-hidden="true">
+              <circle cx="6" cy="6" r="3.2"/><circle cx="28" cy="6" r="3.2"/><circle cx="50" cy="6" r="3.2"/><circle cx="72" cy="6" r="3.2"/>
+              <circle cx="6" cy="28" r="3.2"/><circle cx="28" cy="28" r="3.2"/><circle cx="50" cy="28" r="3.2"/><circle cx="72" cy="28" r="3.2"/>
+              <circle cx="6" cy="50" r="3.2"/><circle cx="28" cy="50" r="3.2"/><circle cx="50" cy="50" r="3.2"/><circle cx="72" cy="50" r="3.2"/>
+            </svg>
+            <svg class="absolute -right-3 -top-7 h-7 w-7 text-olive" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 4v16M4 12h16"/></svg>
+
+            <figure class="img-reveal relative ml-auto w-full overflow-hidden rounded-2xl sm:w-[86%]">
+              <img src="assets/img/web/veg-harvest.jpg" alt="Freshly harvested vegetables in crates" class="h-[320px] w-full object-cover sm:h-[420px] lg:h-[470px]" fetchpriority="high" />
+              <figcaption class="absolute bottom-4 right-4 max-w-[calc(100%-2rem)] text-right rounded-lg bg-white/85 px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.16em] text-ink backdrop-blur-sm">Produce line &middot; Fresh vegetables</figcaption>
+            </figure>
+
+            <!-- overlapping mini card -->
+            <div class="absolute bottom-2 left-0 hidden w-36 rotate-3 overflow-hidden rounded-xl border-4 border-white bg-white shadow-card sm:block sm:w-44">
+              <img src="assets/img/web/veg-tomato.jpg" alt="Tomatoes on the vine" loading="lazy" decoding="async" class="h-24 w-full object-cover sm:h-28" />
+              <p class="px-3 py-2 text-[10px] font-bold uppercase tracking-[0.14em] text-ink">Vine-ripened tomatoes</p>
+            </div>
+
+            <!-- floating badge -->
+            <div class="float-soft absolute right-2 top-5 z-10 rounded-full bg-olive px-4 py-2.5 text-[11px] font-bold text-white shadow-card sm:right-6">Fresh weekly supply</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RANGE ============ -->
+    <section id="range" class="scroll-mt-24 border-y border-ink/[0.06] bg-sand">
+      <div class="mx-auto max-w-shell px-5 py-20 sm:px-8 md:py-28">
+        <div class="flex flex-wrap items-end justify-between gap-6">
+          <div>
+            <p data-reveal class="text-[11px] font-semibold uppercase tracking-[0.22em] text-olive">The range</p>
+            <h2 data-reveal style="--rd:80ms" class="mt-5 max-w-xl font-display text-3xl font-extrabold leading-tight tracking-tight text-ink md:text-4xl">What's in the crates.</h2>
+          </div>
+          <p data-reveal style="--rd:160ms" class="max-w-sm text-sm leading-relaxed text-soft">The mix shifts with the seasons. These are the categories we move week in, week out.</p>
+        </div>
+
+        <div class="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <figure data-reveal class="card-hover group relative overflow-hidden rounded-xl border border-ink/[0.08] bg-white shadow-card">
+            <img src="assets/img/web/veg-greens.jpg" alt="Fresh leafy greens" loading="lazy" decoding="async" class="aspect-[4/3] w-full object-cover transition-transform duration-700 group-hover:scale-[1.04]" />
+            <figcaption class="p-5">
+              <span class="text-[10px] font-bold uppercase tracking-[0.18em] text-olive">Category 01</span>
+              <h3 class="mt-1.5 font-display text-lg font-bold tracking-tight text-ink">Leafy greens</h3>
+              <p class="mt-1.5 text-sm leading-relaxed text-soft">Spinach, lettuce, cress and other fast-turning greens, moved quickly to hold freshness.</p>
+            </figcaption>
+          </figure>
+          <figure data-reveal style="--rd:80ms" class="card-hover group relative overflow-hidden rounded-xl border border-ink/[0.08] bg-white shadow-card">
+            <img src="assets/img/web/veg-tomato.jpg" alt="Tomatoes on the vine" loading="lazy" decoding="async" class="aspect-[4/3] w-full object-cover transition-transform duration-700 group-hover:scale-[1.04]" />
+            <figcaption class="p-5">
+              <span class="text-[10px] font-bold uppercase tracking-[0.18em] text-olive">Category 02</span>
+              <h3 class="mt-1.5 font-display text-lg font-bold tracking-tight text-ink">Tomatoes &amp; fruiting vegetables</h3>
+              <p class="mt-1.5 text-sm leading-relaxed text-soft">Tomatoes, peppers, cucumbers and chillies, graded for consistent wholesale lots.</p>
+            </figcaption>
+          </figure>
+          <figure data-reveal style="--rd:160ms" class="card-hover group relative overflow-hidden rounded-xl border border-ink/[0.08] bg-white shadow-card">
+            <img src="assets/img/web/veg-roots.jpg" alt="Fresh root vegetables" loading="lazy" decoding="async" class="aspect-[4/3] w-full object-cover transition-transform duration-700 group-hover:scale-[1.04]" />
+            <figcaption class="p-5">
+              <span class="text-[10px] font-bold uppercase tracking-[0.18em] text-olive">Category 03</span>
+              <h3 class="mt-1.5 font-display text-lg font-bold tracking-tight text-ink">Roots &amp; tubers</h3>
+              <p class="mt-1.5 text-sm leading-relaxed text-soft">Carrots, radish and other roots that travel and store well between deliveries.</p>
+            </figcaption>
+          </figure>
+          <figure data-reveal class="card-hover group relative overflow-hidden rounded-xl border border-ink/[0.08] bg-white shadow-card">
+            <img src="assets/img/web/produce-market.jpg" alt="Crates of cabbage and cruciferous vegetables" loading="lazy" decoding="async" class="aspect-[4/3] w-full object-cover transition-transform duration-700 group-hover:scale-[1.04]" />
+            <figcaption class="p-5">
+              <span class="text-[10px] font-bold uppercase tracking-[0.18em] text-olive">Category 04</span>
+              <h3 class="mt-1.5 font-display text-lg font-bold tracking-tight text-ink">Cabbages &amp; cruciferous</h3>
+              <p class="mt-1.5 text-sm leading-relaxed text-soft">Cabbage, broccoli and cauliflower, crated for the showroom floor.</p>
+            </figcaption>
+          </figure>
+          <figure data-reveal style="--rd:80ms" class="card-hover group relative overflow-hidden rounded-xl border border-ink/[0.08] bg-white shadow-card">
+            <img src="assets/img/web/veg-potato.jpg" alt="Potatoes in bulk" loading="lazy" decoding="async" class="aspect-[4/3] w-full object-cover transition-transform duration-700 group-hover:scale-[1.04]" />
+            <figcaption class="p-5">
+              <span class="text-[10px] font-bold uppercase tracking-[0.18em] text-olive">Category 05</span>
+              <h3 class="mt-1.5 font-display text-lg font-bold tracking-tight text-ink">Potatoes &amp; alliums</h3>
+              <p class="mt-1.5 text-sm leading-relaxed text-soft">Potatoes, onions and garlic in bulk bags and crates for steady weekly supply.</p>
+            </figcaption>
+          </figure>
+          <figure data-reveal style="--rd:160ms" class="card-hover group relative overflow-hidden rounded-xl border border-ink/[0.08] bg-white shadow-card">
+            <img src="assets/img/web/produce-crates.jpg" alt="Mixed seasonal vegetable crates" loading="lazy" decoding="async" class="aspect-[4/3] w-full object-cover transition-transform duration-700 group-hover:scale-[1.04]" />
+            <figcaption class="p-5">
+              <span class="text-[10px] font-bold uppercase tracking-[0.18em] text-olive">Category 06</span>
+              <h3 class="mt-1.5 font-display text-lg font-bold tracking-tight text-ink">Mixed seasonal crates</h3>
+              <p class="mt-1.5 text-sm leading-relaxed text-soft">Assorted seasonal boxes put together for buyers who want variety in one order.</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SOURCING ============ -->
+    <section class="bg-white">
+      <div class="mx-auto max-w-shell px-5 py-20 sm:px-8 md:py-28">
+        <p data-reveal class="text-[11px] font-semibold uppercase tracking-[0.22em] text-olive">Sourcing approach</p>
+        <h2 data-reveal style="--rd:80ms" class="mt-5 max-w-2xl font-display text-3xl font-extrabold leading-tight tracking-tight text-ink md:text-4xl">
+          Three steps from grower to buyer.
+        </h2>
+
+        <div class="relative mt-14">
+          <div class="absolute left-0 right-0 top-8 hidden border-t-2 border-dashed border-ink/20 lg:block" aria-hidden="true"></div>
+          <ol class="grid gap-12 md:grid-cols-3 lg:gap-10">
+            <li data-reveal class="relative">
+              <span class="relative z-10 grid h-16 w-16 place-items-center rounded-xl bg-ink font-display text-sm font-bold text-white shadow-card">01</span>
+              <svg class="mt-6 h-6 w-6 text-olive" aria-hidden="true"><use href="#i-sprout"/></svg>
+              <h3 class="mt-3 font-display text-xl font-bold tracking-tight text-ink">Grower selection</h3>
+              <p class="mt-2.5 text-sm leading-relaxed text-soft">
+                We buy from growers who can deliver consistent quality in volume, season after
+                season.
+              </p>
+            </li>
+            <li data-reveal style="--rd:120ms" class="relative">
+              <span class="relative z-10 grid h-16 w-16 place-items-center rounded-xl bg-ink font-display text-sm font-bold text-white shadow-card">02</span>
+              <svg class="mt-6 h-6 w-6 text-denim" aria-hidden="true"><use href="#i-shield"/></svg>
+              <h3 class="mt-3 font-display text-xl font-bold tracking-tight text-ink">Quality check</h3>
+              <p class="mt-2.5 text-sm leading-relaxed text-soft">
+                Deliveries are checked for freshness and condition at the Kajang warehouse before
+                being accepted into stock.
+              </p>
+            </li>
+            <li data-reveal style="--rd:240ms" class="relative">
+              <span class="relative z-10 grid h-16 w-16 place-items-center rounded-xl bg-ink font-display text-sm font-bold text-white shadow-card">03</span>
+              <svg class="mt-6 h-6 w-6 text-brass" aria-hidden="true"><use href="#i-store"/></svg>
+              <h3 class="mt-3 font-display text-xl font-bold tracking-tight text-ink">Wholesale supply</h3>
+              <p class="mt-2.5 text-sm leading-relaxed text-soft">
+                Stock rotates first-in-first-out and moves quickly to the Port Dickson showroom
+                for retail buyers.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ILLUSTRATION + SUPPLY NOTE ============ -->
+    <section class="border-y border-ink/[0.06] bg-sand">
+      <div class="mx-auto max-w-shell px-5 py-20 sm:px-8 md:py-28">
+        <div class="grid gap-12 lg:grid-cols-2 lg:items-center">
+          <!-- animated crate -->
+          <figure data-reveal class="order-2 overflow-hidden rounded-xl border border-ink/[0.08] bg-white p-4 shadow-card md:p-6 lg:order-1">
+            <svg viewBox="0 0 640 340" class="w-full" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <!-- ground -->
+              <line x1="60" y1="300" x2="580" y2="300" stroke="#211E17" stroke-opacity="0.25" stroke-width="2.5" stroke-linecap="round"/>
+              <ellipse cx="320" cy="302" rx="170" ry="9" fill="#211E17" fill-opacity="0.06"/>
+
+              <!-- leafy sprigs (swaying) -->
+              <g class="sway" stroke="#66753B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M262 176c0-26 10-44 26-56"/>
+                <path d="M288 120c-14 2-24 10-26 24 14 2 24-8 26-24z" fill="#F6F2E9"/>
+                <path d="M288 120c2-14 12-24 26-26 0 14-10 24-26 26z" fill="#F6F2E9"/>
+              </g>
+              <g class="sway sway--slow sway--late" stroke="#66753B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M376 176c-2-22 4-38 16-50"/>
+                <path d="M392 126c-12 0-22 6-26 18 12 4 22-4 26-18z" fill="#F6F2E9"/>
+              </g>
+
+              <!-- tomatoes -->
+              <g stroke="#211E17" stroke-width="2.5">
+                <circle cx="248" cy="152" r="21" fill="#AE4A2A" stroke="none"/>
+                <path d="M248 131v-8" stroke="#66753B" stroke-width="3" stroke-linecap="round"/>
+                <circle cx="292" cy="146" r="18" fill="#C25B3A" stroke="none"/>
+                <path d="M292 128v-7" stroke="#66753B" stroke-width="3" stroke-linecap="round"/>
+              </g>
+
+              <!-- pepper -->
+              <g stroke="#211E17" stroke-width="2.5" stroke-linejoin="round">
+                <path d="M330 176c-8-2-12-10-10-20 2-8 8-12 16-12s14 4 16 12c2 10-2 18-10 20-4 1-8 1-12 0z" fill="#7A8C42"/>
+                <path d="M336 144v-10" stroke="#66753B" stroke-width="3" stroke-linecap="round"/>
+              </g>
+
+              <!-- carrot -->
+              <g stroke="#211E17" stroke-width="2.5" stroke-linejoin="round">
+                <path d="M420 132l10 44c.6 3-3 5-5 2l-22-36 17-10z" fill="#AC8446"/>
+                <path d="M414 128c-2-8 2-14 8-16M422 126c2-8 8-11 14-10" stroke="#66753B" stroke-width="3" stroke-linecap="round"/>
+              </g>
+
+              <!-- crate -->
+              <g stroke="#211E17" stroke-width="2.5" stroke-linejoin="round">
+                <path d="M196 176h248l-10 124H206l-10-124z" fill="#F6F2E9"/>
+                <path d="M204 206h232" stroke-opacity="0.5"/>
+                <path d="M208 240h224" stroke-opacity="0.5"/>
+                <path d="M212 272h216" stroke-opacity="0.5"/>
+                <line x1="196" y1="176" x2="206" y2="300" stroke-opacity="0.4"/>
+                <line x1="444" y1="176" x2="434" y2="300" stroke-opacity="0.4"/>
+              </g>
+              <text class="scene-label" x="320" y="252" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" font-weight="600" letter-spacing="4" fill="#6E6A5E">PRODUCE</text>
+
+              <!-- freshness dashes -->
+              <g stroke="#66753B" stroke-width="2.5" stroke-linecap="round" stroke-opacity="0.6">
+                <path d="M150 120c6-6 14-8 22-6"/>
+                <path d="M470 108c8-2 15 0 20 6"/>
+                <path d="M486 150h18M495 141v18"/>
+              </g>
+            </svg>
+            <figcaption class="mt-2 text-center text-[10px] font-semibold uppercase tracking-[0.18em] text-soft">Crated, checked, dispatched</figcaption>
+          </figure>
+
+          <div class="order-1 lg:order-2">
+            <p data-reveal class="text-[11px] font-semibold uppercase tracking-[0.22em] text-olive">Reliable supply</p>
+            <h2 data-reveal style="--rd:80ms" class="mt-5 font-display text-3xl font-extrabold leading-tight tracking-tight text-ink md:text-4xl">
+              One chain, kept tight.
+            </h2>
+            <p data-reveal style="--rd:160ms" class="mt-5 max-w-md text-[15px] leading-relaxed text-soft">
+              Produce is the faster game: what arrives today should be with buyers before the week
+              is out. Our warehouse runs the vegetable line on quick rotation while the apparel
+              line holds stock on the racks beside it.
+            </p>
+            <ul data-reveal style="--rd:240ms" class="mt-8 space-y-3">
+              <li class="flex items-center gap-3 text-sm font-medium text-ink"><span class="h-1.5 w-1.5 rounded-full bg-olive"></span> First-in-first-out rotation on every crate</li>
+              <li class="flex items-center gap-3 text-sm font-medium text-ink"><span class="h-1.5 w-1.5 rounded-full bg-olive"></span> Condition checked at receiving, not at the buyer's door</li>
+              <li class="flex items-center gap-3 text-sm font-medium text-ink"><span class="h-1.5 w-1.5 rounded-full bg-olive"></span> Mixed seasonal boxes available on request</li>
+            </ul>
+            <div data-reveal style="--rd:320ms" class="mt-9">
+              <a href="warehouse" class="group inline-flex items-center gap-2 rounded-full border border-ink/15 bg-white px-6 py-3.5 text-[13px] font-semibold text-ink transition-all hover:border-ink/40 hover:shadow-md">
+                See where produce is handled
+                <svg class="h-4 w-4 transition-transform group-hover:translate-x-1"><use href="#i-arrow"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section id="contact" class="scroll-mt-24 bg-white">
+      <div class="mx-auto max-w-shell px-5 py-20 sm:px-8 md:py-28">
+        <div class="relative overflow-hidden rounded-xl bg-ink">
+          <div class="absolute inset-y-0 right-0 hidden w-1/2 overflow-hidden md:block" aria-hidden="true">
+            <img src="assets/img/web/veg-pepper.jpg" alt="" data-parallax="0.12" loading="lazy" decoding="async" class="h-full w-full scale-[1.15] object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-r from-ink via-ink/70 to-ink/25"></div>
+          </div>
+          <div class="relative px-7 py-14 sm:px-12 md:max-w-[58%] md:py-20 lg:px-16">
+            <p data-reveal class="text-[11px] font-semibold uppercase tracking-[0.22em] text-brass">Wholesale enquiries</p>
+            <h2 data-reveal style="--rd:80ms" class="mt-5 font-display text-3xl font-extrabold leading-tight tracking-tight text-white md:text-5xl">
+              Ask about weekly supply.
+            </h2>
+            <p data-reveal style="--rd:160ms" class="mt-5 max-w-md text-[15px] leading-relaxed text-white/70">
+              Tell us which categories and volumes your business needs. We will confirm what is
+              available this week and set up a standing supply.
+            </p>
+            <div data-reveal style="--rd:240ms" class="mt-9 flex flex-wrap gap-3">
+              <a href="tel:0391346145" class="inline-flex items-center gap-2.5 rounded-full bg-white px-6 py-3.5 text-[13px] font-bold text-ink transition-all hover:shadow-xl">
+                <svg class="h-4 w-4"><use href="#i-phone"/></svg>
+                03-9134 6145
+              </a>
+              <a href="mailto:tvcfashionhousesdnbhd@gmail.com" class="inline-flex items-center gap-2.5 rounded-full border border-white/30 px-6 py-3.5 text-[13px] font-bold text-white transition-all hover:border-white hover:bg-white/10">
+                <svg class="h-4 w-4"><use href="#i-mail"/></svg>
+                Email us
+              </a>
+            </div>
+            <p data-reveal style="--rd:320ms" class="mt-7 text-sm text-white/60">
+              Also trading woven apparel. <a href="apparel" class="font-semibold text-white underline decoration-white/40 underline-offset-4 transition-colors hover:decoration-white">See the apparel line</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="border-t border-ink/[0.08] bg-sand">
+    <div class="mx-auto max-w-shell px-5 sm:px-8">
+      <div class="flex flex-wrap items-center gap-x-6 gap-y-2 border-b border-ink/[0.08] py-6 text-[12px] font-semibold text-soft">
+        <span class="mr-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-ink/40">Explore</span>
+        <a href="apparel" class="transition-colors hover:text-thread">Apparel line</a>
+        <a href="vegetables" class="transition-colors hover:text-thread">Vegetables line</a>
+        <a href="warehouse" class="transition-colors hover:text-thread">Warehouse</a>
+        <a href="#contact" class="transition-colors hover:text-thread">Contact</a>
+      </div>
+      <div class="flex flex-col items-start justify-between gap-8 py-10 md:flex-row md:items-center">
+        <a href="./" class="flex items-center gap-1" aria-label="TVC Fashion House - back to home">
+          <img src="assets/img/logo.png" alt="TVC Fashion House logo" class="h-10 w-10 object-contain" />
+          <span class="leading-tight">
+            <span class="block font-display text-[15px] font-bold tracking-tight text-ink">TVC Fashion House</span>
+            <span class="block text-[10px] font-medium uppercase tracking-[0.18em] text-soft">Sdn. Bhd. &middot; Est. 2020</span>
+          </span>
+        </a>
+        <p class="text-[11px] font-medium uppercase tracking-[0.16em] text-soft">
+          TVC Fashion House Sdn. Bhd. &middot; Reg. No. 202001003068 (1359387-P)
+        </p>
+        <p class="text-[11px] font-medium uppercase tracking-[0.16em] text-soft">
+          &copy; <span data-year>2026</span> &middot; All rights reserved
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>
