@@ -79,13 +79,16 @@ npm run preview # serve dist/ locally
 
 `npm run build` outputs a fully static `dist/`. Clean URLs need one of:
 
-- **Apache** — `dist/.htaccess` is included (rewrite `/page` → `page.html`, 301 `.html` → clean). Requires `mod_rewrite` + `AllowOverride All`.
-- **Netlify / Vercel-style** — `dist/_redirects` included (200 rewrites + 301 canonicalization).
+- **Vercel** (current deployment) — `vercel.json` at the repo root handles it: `cleanUrls: true` serves `/apparel` from `apparel.html` and 308-redirects `/apparel.html` to `/apparel`. The same file applies the security headers (CSP, X-Frame-Options, Referrer-Policy, Permissions-Policy, nosniff), since Vercel ignores `_headers`/`.htaccess`.
+- **Apache** — `dist/.htaccess` is included (rewrite `/page` → `page.html`, 301 `.html` → clean, security headers). Requires `mod_rewrite`, `mod_headers` + `AllowOverride All`.
+- **Netlify** — `dist/_redirects` and `dist/_headers` included (200 rewrites + 301 canonicalization + security headers).
 - **nginx** —
   ```nginx
   location / { try_files $uri $uri.html $uri/ =404; }
   rewrite ^/([^.]+)\.html$ /$1 permanent;
   ```
+
+> Note: each host reads only its own config format. `vercel.json` is the one that matters for the current Vercel deployment.
 
 `og:image` paths are currently relative — set absolute URLs (with domain) once the live domain is known.
 
