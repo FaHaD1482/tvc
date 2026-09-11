@@ -17,6 +17,7 @@ export default defineConfig({
         warehouse: 'warehouse.html',
         apparel: 'apparel.html',
         vegetables: 'vegetables.html',
+        people: 'people.html',
       },
     },
   },

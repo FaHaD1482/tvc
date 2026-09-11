@@ -50,10 +50,11 @@ website/
 
 | URL (clean)   | File              | Purpose                                                        |
 | ------------- | ----------------- | -------------------------------------------------------------- |
-| `/`           | `index.html`      | Home: hero collage, marquee, overview mosaic, vision/mission, what-we-do, operations, people, locations, standards, contact CTA |
+| `/`           | `index.html`      | Home: hero collage, marquee, overview mosaic, vision/mission, what-we-do, operations, locations, standards, contact CTA |
 | `/warehouse`  | `warehouse.html`  | Kajang facility: edge-bleed hero, animated SVG warehouse scene, 4 function cards, gallery, location |
 | `/apparel`    | `apparel.html`    | Apparel line: hero collage + stats, 5-style catalog, factory process, compliance, CTA |
 | `/vegetables` | `vegetables.html` | Produce line: hero organic blocks, 6-category range, sourcing steps, animated crate SVG, CTA |
+| `/people`     | `people.html`     | Leadership & People: Director & executive leadership, co-founders, operations team, governance pillars, contact CTA |
 
 ## Features
 
